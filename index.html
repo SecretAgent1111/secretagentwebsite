@@ -1,35 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Varun | Cyberpunk SOC</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="terminal">
-  <p>$ whoami</p>
-  <h1 class="glitch">Varun Sai Yadla</h1>
-  <p>Cybersecurity | Blue Team | SOC</p>
+  <p class="cmd">$ whoami</p>
+  <h1 id="name" class="glitch"></h1>
+  <p class="subtitle">Cybersecurity | Blue Team | SOC</p>
 </div>
 
 <div class="terminal">
-  <p>$ cat about.txt</p>
+  <p class="cmd">$ cat summary.txt</p>
   <p>
-    Cybersecurity trained graduate focused on SOC monitoring,
-    SIEM analysis, and incident detection.
+    Cybersecurity trained graduate with hands-on experience in both Blue Team
+    and Red Team operations, with stronger focus on SOC monitoring, SIEM
+    analysis, incident detection, and response.
+  </p>
+  <p>
+    Experienced in analyzing security alerts, network traffic, IDS/firewall
+    events, and understanding real-world attack techniques from both
+    defensive and offensive perspectives.
   </p>
 </div>
 
 <div class="terminal">
-  <a href="labs.html">$ cd labs</a>
+  <p class="cmd">$ ls skills</p>
+  <ul>
+    <li>SIEM Monitoring & Log Analysis</li>
+    <li>Incident Detection & Response</li>
+    <li>Cyber Threat Analysis</li>
+    <li>Network & Packet Analysis</li>
+    <li>IDS / Firewall Alerts</li>
+    <li>Web Application Security (OWASP Top 10)</li>
+    <li>Vulnerability Assessment (VAPT)</li>
+  </ul>
 </div>
 
-  <script>
+<div class="terminal">
+  <p class="cmd">$ cat certifications.txt</p>
+  <ul>
+    <li>CompTIA Network+ (N10-009)</li>
+    <li>Certified Ethical Hacker (CEH)</li>
+    <li>eJPT</li>
+    <li>SOC Level 1</li>
+    <li>Cyber Security 101</li>
+    <li>Training Programme in Cyber Security & Ethical Hacking</li>
+  </ul>
+</div>
+
+<div class="terminal">
+  <p class="cmd">$ cat experience.txt</p>
+
+  <p><strong>InfoSec4TC — Cyber Security Specialist</strong></p>
+  <p>Aug 2024 – Feb 2025 | Dubai</p>
+  <ul>
+    <li>Assisted in ISMS gap assessments aligned with ISO 27001 and NIST</li>
+    <li>Monitored security logs and alerts for anomalous activity</li>
+    <li>Supported vulnerability assessments and remediation tracking</li>
+    <li>Assisted in security audits and compliance reporting</li>
+    <li>Participated in basic incident investigations</li>
+  </ul>
+
+  <p><strong>Cartel Software Pvt Ltd — Cyber Security Analyst</strong></p>
+  <p>May 2024 – Aug 2024 | Hyderabad</p>
+  <ul>
+    <li>Performed network and packet analysis for suspicious traffic</li>
+    <li>Worked with IDS and firewall security controls</li>
+    <li>Assisted in VAPT activities</li>
+    <li>Explored web application security and secure development practices</li>
+  </ul>
+</div>
+
+<div class="terminal">
+  <p class="cmd">$ cat education.txt</p>
+  <ul>
+    <li>MSc Applied Cyber Security — Queen’s University Belfast (2024–2025)</li>
+    <li>B.Tech CSE (Cyber Security) — GCET (2020–2024)</li>
+  </ul>
+</div>
+
+<div class="terminal">
+  <a href="labs.html" class="cmd">$ cd labs</a>
+</div>
+
+<script>
   const text = "Varun Sai Yadla";
   let i = 0;
-  const el = document.querySelector("h1");
+  const el = document.getElementById("name");
 
-  el.innerHTML = "";
   function type() {
     if (i < text.length) {
       el.innerHTML += text.charAt(i);
@@ -39,7 +101,6 @@
   }
   type();
 </script>
-
 
 </body>
 </html>
