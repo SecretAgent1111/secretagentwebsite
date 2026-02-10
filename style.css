@@ -65,3 +65,12 @@ img {
   box-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
 }
 
+pre {
+  background: #050505;
+  color: #00ffcc;
+  padding: 15px;
+  border: 1px solid #00ffcc;
+  overflow-x: auto;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+}
+
