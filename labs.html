@@ -1,7 +1,8 @@
 <div class="terminal">
   <p class="cmd">$ cat splunk-bruteforce-usecase.txt</p>
 
-  <p><strong>Title:</strong> Splunk Use Case: Detecting and Generating Alerts on Brute-Force Attempts</p>
+  <p><strong>Title:</strong><br>
+  Splunk Use Case: Detecting and Generating Alerts on Brute-Force Attempts</p>
 
   <p><strong>Objective:</strong><br>
   Detect repeated failed authentication attempts and generate alerts using Splunk.</p>
@@ -19,7 +20,7 @@
   <p><strong>Detection Logic:</strong></p>
   <ul>
     <li>Multiple failed login attempts from same source</li>
-    <li>Threshold-based detection within a time window</li>
+    <li>Threshold-based detection within a defined time window</li>
     <li>False positive reduction through filtering</li>
   </ul>
 
@@ -37,10 +38,10 @@ index=windows sourcetype=WinEventLog:Security EventCode=4625
     <li>Integrated with SOC alert workflow</li>
   </ul>
 
-  <!-- Screenshots go below -->
+  <p><strong>Blue Team Takeaway:</strong><br>
+  Demonstrates how SIEM-based detections help identify credential abuse early
+  and reduce attacker dwell time.</p>
+
   <img src="images/SPLUNKQUERY.png" alt="Splunk brute-force detection query">
-
-<img src="images/BRUTEFORCERESULT.png" alt="Splunk brute-force alert result">
+  <img src="images/BRUTEFORCERESULT.png" alt="Splunk brute-force alert result">
 </div>
-
-
