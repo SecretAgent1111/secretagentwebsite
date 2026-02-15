@@ -60,7 +60,7 @@ Type 'splunk' to view detailed Splunk labs.
   splunk: `
 Opening Splunk Labs...
 
-👉 https://YOUR_USERNAME.github.io/terminal-portfolio/splunk.html
+👉 https://varunsaiyadla.github.io/terminal-portfolio/splunk.html
 `,
 
   experience: `
